@@ -7,7 +7,7 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.jamie1192.mvvm_retrofit_template"
+        applicationId "com.jamie1192.trashmailandroid"
         minSdkVersion 19
         targetSdkVersion 28
         versionCode 1
@@ -46,4 +46,9 @@ dependencies {
     // optional - RxJava support for Room
     implementation "androidx.room:room-rxjava2:2.1.0-alpha02"
 
+    implementation 'co.zsmb:materialdrawer-kt:2.0.1'
+
+    //required support lib modules
+    implementation "androidx.annotation:annotation:1.0.0"
+    implementation "com.google.android.material:material:1.1.0-alpha01"
 }
