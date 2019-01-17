@@ -20,7 +20,7 @@ class App : Application() {
     override fun onCreate() {
         super.onCreate()
 
-        if (BuildConfig.DEBUG) plant(Timber.DebugTree())
+        if (BuildConfig.DEBUG) { plant(Timber.DebugTree()) }
 
         AndroidThreeTen.init(this)
         startKoin(this, listOf(appModule))
