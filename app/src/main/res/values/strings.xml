@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Trashmail for Android</string>
+    <string name="quick">Quick</string>
+    <string name="addressManager">Address Manager</string>
+    <string name="account">Account</string>
+
+    <string name="newDisposableAddress">New Disposable Address…</string>
+    <string name="realEmailAddress">Your real email address…</string>
 </resources>

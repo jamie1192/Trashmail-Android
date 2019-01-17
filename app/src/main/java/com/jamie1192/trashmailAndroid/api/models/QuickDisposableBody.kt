@@ -1,4 +1,4 @@
-package com.jamie1192.TrashmailAndroid.api.models
+package com.jamie1192.trashmailAndroid.api.models
 
 import com.google.gson.annotations.SerializedName
 

@@ -1,0 +1,96 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/content_padding"
+    tools:context="com.jamie1192.trashmailAndroid.fragments.QuickFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_new_disposable"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/content_padding"
+        app:layout_constraintWidth_percent="0.60"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/spinner_disposable_domain"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_new_disposable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/newDisposableAddress"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Spinner
+        android:id="@+id/spinner_disposable_domain"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/layout_new_disposable"
+        app:layout_constraintBottom_toBottomOf="@id/layout_new_disposable"
+        app:layout_constraintStart_toEndOf="@id/layout_new_disposable"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_real_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layout_new_disposable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_real_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/realEmailAddress"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <Spinner
+        android:id="@+id/spinner_forwards_count"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/content_padding"
+        app:layout_constraintWidth_percent="0.40"
+        app:layout_constraintTop_toBottomOf="@id/layout_real_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/spinner_lifespan"
+        app:layout_constraintHorizontal_chainStyle="spread"
+
+
+    />
+
+    <Spinner
+        android:id="@+id/spinner_lifespan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/content_padding"
+        app:layout_constraintTop_toBottomOf="@id/layout_real_email"
+        app:layout_constraintWidth_percent="0.40"
+        app:layout_constraintStart_toEndOf="@id/spinner_forwards_count"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        />
+    
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        style="@style/Widget.MaterialComponents.FloatingActionButton"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

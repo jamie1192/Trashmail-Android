@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_quick"
+        android:title="@string/quick"
+        app:showAsAction="ifRoom"
+        app:ico_color="@color/colorPrimary"
+        app:ico_size="24dp"
+        />
+
+    <item
+        android:id="@+id/nav_address_manager"
+        android:title="@string/addressManager"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/nav_account"
+        android:title="@string/account"
+        app:showAsAction="ifRoom"
+        />
+
+</menu>
