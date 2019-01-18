@@ -17,11 +17,13 @@ class NetworkInterceptor(context : Context) : Interceptor {
             throw NoNetworkException()
         }
 
-        fun builder() = Request.Builder().apply {
-            chain.request().newBuilder()
-        }
-
-        return chain.proceed(builder().build())
+//        fun builder() = Request.Builder().apply {
+//            chain.request().newBuilder()
+//        }
+//
+//        return chain.proceed(builder().build())
+        val builder : Request.Builder = chain.request().newBuilder()
+        return chain.proceed(builder.build())
     }
 
     object NetworkUtil {

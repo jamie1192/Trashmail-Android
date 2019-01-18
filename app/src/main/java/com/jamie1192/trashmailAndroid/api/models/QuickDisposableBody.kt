@@ -2,7 +2,7 @@ package com.jamie1192.trashmailAndroid.api.models
 
 import com.google.gson.annotations.SerializedName
 
-class QuickDisposableBody (
+data class QuickDisposableBody (
     @SerializedName("form_source")
     var formSource : String?,
     @SerializedName("form_domain")
@@ -14,7 +14,7 @@ class QuickDisposableBody (
     @SerializedName("form_expire_days")
     var expiry : Int?,
     @SerializedName("form_whitelisting")
-    var isWhitelisted : Boolean?,
+    var isWhitelisted : Int?,
     @SerializedName("create_submit")
     var createAccount : Boolean?
 )

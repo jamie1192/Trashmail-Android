@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 
 import com.jamie1192.trashmailAndroid.R
+import com.jamie1192.trashmailAndroid.repositories.TrashmailRepository
 
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
@@ -29,6 +30,16 @@ class QuickFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? = inflater.inflate(R.layout.fragment_quick, container, false)
 
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+
+        testCookie()
+    }
+
+    fun testCookie() {
+        TrashmailRepository().test()
+    }
 
 
     companion object {
